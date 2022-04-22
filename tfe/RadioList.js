@@ -14,15 +14,20 @@ class RadioList extends React.Component {
       <View>
         <Text style={styles.title}>Choisis la radio que tu veux écouter :)</Text>
         <View style={styles.space} />
-        <Image
+        <Image style={styles.imageradio}
           source={require('./RadioImage/tipik.png')}
-          style={{width: 120, height: 80}}
+        />
+        <Button style={styles.btnradio}
+        title="Tipik"
+        onPress={() =>
+          this.props.navigation.navigate('Home')
+        }
         />
         <View style={styles.space} />
         <Button style={styles.btnhome}
-          title="Retour à la page d'accueil"
+          title="HomePage"
           onPress={() =>
-            this.props.navigation.navigate('Home')
+            this.props.navigation.navigate('RadioPlayer')
           }
         />
       </View>
@@ -31,12 +36,9 @@ class RadioList extends React.Component {
 }
 
 const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#fff',
-      alignItems: 'center',
-      justifyContent: 'center',
-      padding: 5,
+    imageradio: {
+      width: 120, 
+      height: 80
     },
     title: {
       marginTop: 10,
@@ -49,11 +51,13 @@ const styles = StyleSheet.create({
       width: 20,
       height: 20,
     },
+    btnradio: {
+      backgroundColor: '#E3BB76',
+    },
     btnhome: {
-      alignItems: 'center',
-      justifyContent: 'center',
+      flex: 1,
+      alignItems: 'flex-end',
       position: 'absolute',
-      height: 120,
     },
   });
 
