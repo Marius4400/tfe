@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "tfe",
+    "slug": "tfe",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
