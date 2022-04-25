@@ -3,20 +3,27 @@ import {
     StyleSheet, 
     Text, 
     View, 
-    Button 
+    Button, 
+    TouchableOpacity, 
 } from 'react-native';
+import { Ionicons } from '@expo/vector-icons'
 class MaMusique extends React.Component {
   render() {
     return (
       <View>
         <Text style={styles.title}>Quel album veux tu écouté ? :)</Text>
         <View style={styles.space} />
-        <Button style={styles.btnhome}
+        <Button style={styles.btnhomes}
           title="Retour à la page d'accueil"
           onPress={() =>
             this.props.navigation.navigate('Home')
           }
         />
+        <TouchableOpacity style={styles.btnhome} onPress={() => 
+          this.props.navigation.navigate('Home')
+          }>
+          <Ionicons name='home' size={48} color='#444' />
+        </TouchableOpacity>
       </View>
     );
   }
@@ -40,7 +47,7 @@ const styles = StyleSheet.create({
       width: 20,
       height: 20,
     },
-    btnhome: {
+    btnhomes: {
       flex: 1,
       alignItems: 'center',
       justifyContent: 'center',
