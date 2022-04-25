@@ -14,7 +14,7 @@ class HomeScreen extends React.Component {
         <Button style={styles.button}
           title="Radio"
           onPress={() =>
-            this.props.navigation.navigate('RadioList')
+            this.props.navigation.navigate('RadioPlayer')
           }
         />
         <View style={styles.space} />

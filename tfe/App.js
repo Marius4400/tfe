@@ -4,7 +4,7 @@ import { StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './HomeScreen';
-import RadioList from './RadioList';
+import RadioPlayer from './RadioPlayer';
 import MaMusique from './MusiqueInterne';
 
 const Stack = createStackNavigator();
@@ -19,8 +19,8 @@ class App extends React.Component {
             component={HomeScreen}
           />
           <Stack.Screen
-            name="RadioList"
-            component={RadioList}
+            name="RadioPlayer"
+            component={RadioPlayer}
           />
           <Stack.Screen
           name="MaMusique"
