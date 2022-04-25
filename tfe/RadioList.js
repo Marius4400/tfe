@@ -20,14 +20,14 @@ class RadioList extends React.Component {
         <Button style={styles.btnradio}
         title="Tipik"
         onPress={() =>
-          this.props.navigation.navigate('Home')
+          this.props.navigation.navigate('RadioPlayer')
         }
         />
         <View style={styles.space} />
         <Button style={styles.btnhome}
           title="HomePage"
           onPress={() =>
-            this.props.navigation.navigate('RadioPlayer')
+            this.props.navigation.navigate('Home')
           }
         />
       </View>
