@@ -46,12 +46,6 @@ class RadioPlayer extends React.Component {
         <Text style={[styles.trackInfoText, styles.largeText]}>
           {RadioPlaylist[currentIndex].title}
         </Text>
-        <Text style={[styles.trackInfoText, styles.smallText]}>
-          {RadioPlaylist[currentIndex].author}
-        </Text>
-        <Text style={[styles.trackInfoText, styles.smallText]}>
-          {RadioPlaylist[currentIndex].source}
-        </Text>
       </View>
     ) : null
   }
@@ -61,7 +55,7 @@ class RadioPlayer extends React.Component {
     return (
       <View style={styles.container}>
         <Image
-          style={styles.albumCover}
+          style={styles.RadioCover}
           source={{uri: RadioPlaylist[currentIndex].imageSource}}
         />
         <View style={styles.controls}>
@@ -170,7 +164,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center'
   },
-  albumCover: {
+  RadioCover: {
     width: 250,
     height: 250
   },

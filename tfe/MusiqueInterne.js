@@ -5,12 +5,11 @@ import {
     View, 
     Button 
 } from 'react-native';
-
 class MaMusique extends React.Component {
   render() {
     return (
       <View>
-        <Text style={styles.title}>Que veux-tu écouter ? :)</Text>
+        <Text style={styles.title}>Quel album veux tu écouté ? :)</Text>
         <View style={styles.space} />
         <Button style={styles.btnhome}
           title="Retour à la page d'accueil"

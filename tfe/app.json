@@ -1,10 +1,15 @@
 {
   "expo": {
-    "name": "tfe",
-    "slug": "tfe",
+    "name": "AudioPlayer",
+    "icon": "./icon/icon.png",
+    "slug": "tfe-mediaplayer",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "description": "",
+    "android": {
+      "package": "Tfe.apk"
+    }
   }
 }
