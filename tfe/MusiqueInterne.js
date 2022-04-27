@@ -7,6 +7,7 @@ import {
     TouchableOpacity, 
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons'
+
 class MaMusique extends React.Component {
   render() {
     return (
@@ -17,6 +18,12 @@ class MaMusique extends React.Component {
           title="Retour à la page d'accueil"
           onPress={() =>
             this.props.navigation.navigate('Home')
+          }
+        />
+        <Button style={styles.btnhomes}
+          title="lire la musique"
+          onPress={() =>
+            this.props.navigation.navigate('MusicPlayer')
           }
         />
         <TouchableOpacity style={styles.btnhome} onPress={() => 

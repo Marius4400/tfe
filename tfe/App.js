@@ -6,6 +6,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './HomeScreen';
 import RadioPlayer from './RadioPlayer';
 import MaMusique from './MusiqueInterne';
+import MusicPlayer from './MusicPlayer';
 
 const Stack = createStackNavigator();
 
@@ -26,6 +27,10 @@ class App extends React.Component {
           name="MaMusique"
           component={MaMusique}
         />
+        <Stack.Screen
+        name="MusicPlayer"
+        component={MusicPlayer}
+      />
         </Stack.Navigator>
       </NavigationContainer>
     );
